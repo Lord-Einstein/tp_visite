@@ -163,7 +163,7 @@ main:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(-145deg, #000000 10%, #1e1205 40%, #8b5c1a 90%);
+    background: linear-gradient(135deg, #000000 10%, #3a280c 45%, #8b5c1a 90%);
     padding: 5px;
     padding-left: 8px;
     border-radius: 0px 8px 8px 0;
@@ -171,6 +171,20 @@ main:hover {
     max-height: 50px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
+/* 
+.bloc:hover{
+    background: linear-gradient(120deg, #000000, #1e1205, #8b5c1a);
+    background-size: 200% 200%;
+    animation: shineMove .6s ease-in-out;
+    box-shadow:
+        inset 0 1px 3px rgba(255,255,255,0.1),
+        0 4px 10px rgba(0,0,0,0.4);
+}
+
+@keyframes shineMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100%; }
+} */
 
 .bloc i {
     display: flex;
