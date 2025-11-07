@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #272727;
+}
+
+main {
+    width: 110mm;
+    max-height: 160mm;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow:
+        0 0 4px rgba(153, 106, 40, 0.4),
+        0 0 5px rgba(230, 180, 90, 0.6),
+        0 0 20px rgba(255, 230, 160, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.4s ease;
+}
+
+main:hover {
+    box-shadow:
+        0 0 8px rgba(153, 106, 40, 0.4),
+        0 0 8px rgba(230, 180, 90, 0.6),
+        0 0 40px rgba(255, 230, 160, 0.7);
+    transform: scale(1.02);
+}
+
+.face_1{
+    height: 55mm;
+    max-height: 55mm;
+
+    position: relative;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face_2 {
+    max-height: 55mm;
+
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.face_1 {
+    background: linear-gradient(145deg, #111 60%, #222 100%);
+    color: #fff;
+}
+
+.face_1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/bg1.png") no-repeat center/cover;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.face_1 hgroup {
+    z-index: 1;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.face_1 h1 {
+    font-weight: 400;
+    font-size: clamp(2rem, 3vw, 4rem);
+    letter-spacing: 2px;
+}
+
+.face_1 .surname {
+    font-weight: bold;
+    font-size: clamp(1rem, 2vw, 2rem);
+    letter-spacing: 2px;
+}
+
+.face_1 p {
+    font-weight: 400;
+    font-size: clamp(0.3rem, 1vw, .6rem);
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.face_1 img {
+    margin: auto;
+    width: 170px;
+    height: 170px;
+    z-index: 1;
+}
+
+.face_2 {
+    background: #ffffff;
+    color: #222;
+}
+
+.face_2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../assets/bg1.png");
+    background-size: contain;
+    filter: grayscale(100%);
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.face_2 .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.face_2 .head a {
+    color: #ad782d;
+    transition: transform 0.2s ease-out;
+}
+
+.face_2 .head a i{
+    font-size: 20px;
+}
+
+.face_2 .head a:hover {
+    transform: scale(1.2);
+}
+
+.face_2 hgroup h2 {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    color: #996a28;
+    font-weight: bolder;
+}
+
+.face_2 hgroup p {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    font-weight: bold;
+    color: #131313;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.bloc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(-145deg, #000000 10%, #1e1205 40%, #8b5c1a 90%);
+    padding: 5px;
+    padding-left: 8px;
+    border-radius: 0px 8px 8px 0;
+    width: 100%;
+    max-height: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.bloc i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.bloc a, .bloc p {
+    color: #ffffff;
+    font-size: 0.85rem;
+    width: 100%;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.bloc a{
+    text-decoration: none;
+    z-index: 11111;
+    /* font-style: italic; */
+    font-size: .8rem;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 90vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .face_1, .face_2 {
+        padding: 15px;
+    }
+
+    .face_1 .logo {
+        height: 80px;
+    }
+}
