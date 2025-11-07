@@ -39,8 +39,8 @@ main:hover {
 }
 
 .face_1{
-    height: 55mm;
-    max-height: 55mm;
+    height: 60mm;
+    max-height: 70mm;
 
     position: relative;
     padding-right: 30px;
@@ -49,7 +49,8 @@ main:hover {
     align-items: center;
 }
 .face_2 {
-    max-height: 55mm;
+    height: 70mm;
+    max-height: 70mm;
 
     position: relative;
     padding: 10px 20px;
@@ -142,14 +143,14 @@ main:hover {
 
 .face_2 hgroup h2 {
     font-size: clamp(1rem, 2vw, 1.8rem);
-    color: #996a28;
+    color: #131313;
     font-weight: bolder;
 }
 
 .face_2 hgroup p {
     font-size: clamp(0.8rem, 1.5vw, 1rem);
     font-weight: bold;
-    color: #131313;
+    color: #996a28;
 }
 
 .address {
@@ -163,7 +164,7 @@ main:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(135deg, #000000 10%, #3a280c 45%, #8b5c1a 90%);
+    background: linear-gradient(-55deg, #000000f0 10%, #3a280c 45%, #785018 90%);
     padding: 5px;
     padding-left: 8px;
     border-radius: 0px 8px 8px 0;
@@ -192,7 +193,7 @@ main:hover {
     align-items: center;
     min-width:30px;
     height: 30px;
-    background-color: #000;
+    background-color: #ae853c;
     color: #fff;
     font-size: 1rem;
     border-radius: 6px;
